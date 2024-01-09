@@ -27,6 +27,13 @@ const { title } = Astro.props;
 		--accent-light: rgb(224, 204, 250);
 		--accent-dark: 49, 10, 101;
 	}
+	@font-face {
+  		font-family: 'Jack Input';
+  		src: url('/fonts/JAi_____.TTF') format('ttf');
+ 		font-weight: normal;
+  		font-style: normal;
+  		font-display: swap;
+	}
 	main {
     	margin: auto;
     	padding: 1rem;
@@ -37,8 +44,8 @@ const { title } = Astro.props;
    		line-height: 1.6;
 	}
 	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
+		font-family: Jack Input, sans-serif;
+		background: #201c2e;
 		background-size: 224px;
 	}
 	code {

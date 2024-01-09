@@ -1,0 +1,29 @@
+---
+import { Icon } from "astro-icon/components"
+const { icon, username, href} = Astro.props;
+---
+
+<li>
+    <Icon name={icon} style="vertical-align: middle" font-size="45"/>
+    <a href={href}>{username}</a>
+    <div class="spacing"></div>
+</li>
+
+<style>
+    li {
+        list-style-type: none;
+    }
+    a {
+        border-radius: 10px;
+        padding: 0.35em 0.5em 0.6em 0.4em;
+        background-color: rgb(51, 47, 69);
+        color: rgb(219, 220, 227);
+        text-decoration: none;
+    }
+    a:hover {
+        color: rgb(198, 152, 238);
+    }
+    .spacing {
+        padding-bottom: 10px;
+    }
+</style>

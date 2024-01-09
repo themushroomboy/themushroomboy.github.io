@@ -1,10 +1,20 @@
 ---
-import { Image } from 'astro:assets';
-import youtubeIcon from './icons/YouTube-Icon-Full-Color-Logo.wine.svg';
+import Social from "./Social.astro";
+
 ---
 
-<ul role="list">
-        <Image style="vertical-align:middle" src={youtubeIcon} alt="" width="45"/>Youtube: <a href="https://youtube.com/@ashfanboy">@ashfanboy</a>
+<ul>
+	<Social
+		username="catboyash"
+		href="https://discordapp.com/users/543789323888361483"
+		icon="discord"
+	></Social>
+	<Social
+		username="@ashfanboy"
+		href="https://youtube.com/@ashfanboy"
+		icon="youtube"
+	></Social>
+
 </ul>
 
 <style>
