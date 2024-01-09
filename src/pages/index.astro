@@ -1,6 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import LinkBox from '../components/LinkBox.astro';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 ---
@@ -8,32 +7,13 @@ import Footer from '../components/Footer.astro';
 <Layout title="catboyash">
 	<main>
 		<Navigation />
-		<h1>Hi, I'm <span class="text-gradient">Ash</span></h1>
-		<p class="box">
-			wahoo
+		<div class="container">
+			<h1 class="typing">Hi, I'm <span class="purple-text">Ash!</span></h1>
+		</div>
+		<div style="clear: both"></div>
+		<p>
+			put stuff here
 		</p>
-		<ul role="list" class="link-card-grid">
-			<LinkBox
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<LinkBox
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<LinkBox
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<LinkBox
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
 		<Footer />
 	</main>
 </Layout>
@@ -42,21 +22,27 @@ import Footer from '../components/Footer.astro';
 	h1 {
 		font-size: 4rem;
 		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
 	}
-	.box {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
+	.typing {
+		overflow: hidden; 
+  		border-right: .15em solid rgb(164, 6, 237); 
+		white-space: nowrap;
+		width: 0;
+  		animation: 
+    		typing 2s steps(30, end) forwards,
+    		blink-caret .75s infinite;
 	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
+	.container {
+		float: left;
+		text-align: left;
+	}
+	@keyframes typing {
+  		from { width: 0 }
+		to { width: 100% }
+	}
+
+	@keyframes blink-caret {
+ 		from, to { border-color: transparent }
+  		50% { border-color: rgb(164, 6, 237); }
 	}
 </style>

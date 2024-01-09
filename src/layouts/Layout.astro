@@ -23,22 +23,16 @@ const { title } = Astro.props;
 </html>
 <style is:global>
 	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
+		--accent: rgb(196, 153, 249);
+		--accent-light: rgb(224, 204, 250);
 		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
 	}
 	main {
     	margin: auto;
     	padding: 1rem;
     	width: 800px;
     	max-width: calc(100% - 2rem);
-    	color: white;
+    	color: rgb(219, 220, 227);
     	font-size: 20px;
    		line-height: 1.6;
 	}
@@ -58,11 +52,14 @@ const { title } = Astro.props;
 			Courier New,
 			monospace;
 	}
-	.text-gradient {
-        background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
+	.purple-text {
+		color: rgb(211, 134, 255);
+	}
+	a {
+        color: rgb(167, 108, 220);
+        text-decoration: none;
+    }
+    a:hover {
+        color: rgb(198, 152, 238);
     }
 </style>

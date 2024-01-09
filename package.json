@@ -13,6 +13,7 @@
     "@astrojs/check": "^0.3.4",
     "@astrojs/sitemap": "^3.0.4",
     "astro": "^4.1.1",
+    "typeit": "^8.8.0",
     "typescript": "^5.3.3"
   }
 }
