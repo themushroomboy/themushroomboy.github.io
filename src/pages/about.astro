@@ -1,23 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Navigation from '../components/Navigation.astro';
+import Navigation from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="catboyash - about">
-	<main>
-        <Navigation />
-		<h1><span class="purple-text">About Me</span></h1>
+	<Navigation />
+	<body>
+		<h1 class="text-purple text-5xl font-bold">About Me</h1>
 		<p>
 			put stuff here
 		</p>
         <Footer />
-	</main>
+	</body>
 </Layout>
-
-<style>
-    h1 {
-		font-size: 3rem;
-		font-weight: 700;
-	}
-</style>

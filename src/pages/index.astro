@@ -1,51 +1,22 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Navigation from '../components/Navigation.astro';
+import Navigation from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Socials from '../components/Socials.astro';
 ---
 
 <Layout title="catboyash">
-	<main>
-		<Navigation />
-		<div class="container">
-			<h1 class="typing">Hi, I'm <span class="purple-text">Ash!</span></h1>
+	<Navigation />
+	<body>
+		<div class="flex w-max">
+			<h1 class="font-bold text-6xl overflow-hidden border-solid border-r-[0.15em] border-purple whitespace-nowrap w-0 animate-typing">Hi, I'm <span class="text-purple">Ash!</span></h1>
 		</div>
 		<div style="clear: both"></div>
 		<p>
-			put stuff here
+			stuff
 		</p>
-		<h2><span class="purple-text">You can find me in several places:</span></h2>
+		<h2 class="text-purple text-2xl font-medium">You can find me in several places:</h2>
         <Socials />
 		<Footer />
-	</main>
+	</body>
 </Layout>
-
-<style>
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-	}
-	.typing {
-		overflow: hidden; 
-  		border-right: .15em solid rgb(164, 6, 237); 
-		white-space: nowrap;
-		width: 0;
-  		animation: 
-    		typing 2s steps(30, end) forwards,
-    		blink-caret .75s infinite;
-	}
-	.container {
-		float: left;
-		text-align: left;
-	}
-	@keyframes typing {
-  		from { width: 0 }
-		to { width: 100% }
-	}
-
-	@keyframes blink-caret {
- 		from, to { border-color: transparent }
-  		50% { border-color: rgb(164, 6, 237); }
-	}
-</style>

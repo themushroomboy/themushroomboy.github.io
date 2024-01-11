@@ -1,4 +1,6 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
+
 interface Props {
 	title: string;
 }
@@ -7,66 +9,33 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html class="m-auto p-1 w-[800px]" lang="en">
 	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="sitemap" href="/sitemap-index.xml" />
 		<meta name="generator" content={Astro.generator} />
+		<ViewTransitions />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="flex flex-col md:self-center text-lg gap-2">
 		<slot />
 	</body>
 </html>
 <style is:global>
-	:root {
-		--accent: rgb(196, 153, 249);
-		--accent-light: rgb(224, 204, 250);
-		--accent-dark: 49, 10, 101;
-	}
-	@font-face {
-  		font-family: 'Jack Input';
-  		src: url('/fonts/JAi_____.TTF') format('ttf');
- 		font-weight: normal;
-  		font-style: normal;
-  		font-display: swap;
-	}
-	main {
-    	margin: auto;
-    	padding: 1rem;
-    	width: 800px;
-    	max-width: calc(100% - 2rem);
-    	color: rgb(219, 220, 227);
-    	font-size: 20px;
-   		line-height: 1.6;
-	}
 	html {
-		font-family: Jack Input, sans-serif;
-		background: #201c2e;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-	.purple-text {
-		color: rgb(211, 134, 255);
+		@apply text-white bg-main;
+		@apply font-['Fredoka'] text-xl;
 	}
 	a {
-        color: rgb(167, 108, 220);
-        text-decoration: none;
-    }
+        @apply text-linkPurple no-underline;
+	}
     a:hover {
-        color: rgb(198, 152, 238);
+        @apply text-lightPurple underline;
     }
 </style>
