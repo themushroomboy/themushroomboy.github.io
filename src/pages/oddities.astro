@@ -1,16 +1,25 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Navigation from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Card from '../components/Card.astro';
 ---
 
 <Layout title="catboyash - oddities">
-	<Navigation />
 	<body>
 		<div class="flex w-max">
 			<h1 class="font-bold text-6xl overflow-hidden border-solid border-r-[0.15em] border-purple whitespace-nowrap w-0 animate-typing">Oddities</span></h1>
 		</div>
-		<h2 class="text-purple text-2xl font-semibold">Here you'll find random stuff from me!</h2>
-		<Footer />
+		<p class="mb-8 mt-2">Random stuff made by me for fun. Not much here yet!</p>
+		<ul class="grid gap-2 grid-cols-2">
+			<Card
+				href="/pixel-painters-cheats",
+				title="Pixel Painters Cheats",
+				desc="Complicated inside joke from a game I had played 2 years ago, finally in stores near you!"
+			/>
+			<Card
+				href="/oddities/lists/discord-upload-limit",
+				title="Random Lists",
+				desc="Lists of many random internet things that I find interesting."
+			/>
+		</ul>
 	</body>
 </Layout>

@@ -5,13 +5,18 @@ export default {
 		colors: {
 			'purple': 'rgb(211, 134, 255)',
 			'white': 'rgb(219, 220, 227)',
+			'sky': 'rgb(2 132 199)'
 		},
 		borderRadius: {
 			DEFAULT: '10px',
 		},
+		fontFamily: {
+			sans: 'Fredoka',
+		},
 		extend: {
 			colors: {
-				linkPurple: 'rgb(167, 108, 220)',
+				linkPink: 'rgb(229, 137, 226)',
+				lightPink: 'rgb(247, 164, 245)',
 				lightPurple: 'rgb(198, 152, 238)',
 				lightWhite: 'rgb(230, 231, 255)',
 				gray: 'rgb(148 163 184)',
@@ -21,6 +26,9 @@ export default {
 				main: 'rgb(34, 30, 48)',
 				light: 'rgb(44, 40, 58)',
 				hover: 'rgb(40, 38, 56)',
+			},
+			fontFamily: {
+				comicSans: ['Comic Sans MS', 'Comic Neue', 'Chalkboard SE', 'sans-serif']
 			},
 			keyframes: {
 				typing: {

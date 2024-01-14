@@ -6,16 +6,17 @@ import ace from "../assets/ace.png";
 import pan from "../assets/pan.png";
 import genderqueer from "../assets/genderqueer.png";
 ---
-<header class="mb-10 float-right">
+<header class="float-right mb-5">
     <ul class="text-right mt-5">
-        <a class="text-white mr-1" href="/">Home</a>
-        <a class="text-white mr-1" href="/about">About</a>
-        <a class="text-white mr-1" href="/oddities">Oddities</a>
+        <a class="text-white mr-1 hover:text-linkPink" href="/">Home</a>
+        <a class="text-white mr-1 hover:text-linkPink" href="/about">About</a>
+        <a class="text-white mr-1 hover:text-linkPink" href="/pingy">Pingy</a>
+        <a class="text-white mr-1 hover:text-linkPink" href="/oddities">Oddities</a>
     </ul>
-    <div class="float-left">
+    <div class="float-left mb-7">
         <Image class="float-left" src="/images/temporarycircle.png" alt="my pfp" width="120" height="120"/>
         <div class="float-right ml-5">
-            <h2 class="text-purple text-[40px] font-bold mt-2 mb-1">Ash</h2>
+            <h2 class="text-purple text-[40px] font-extrabold mt-2 mb-1">Ash</h2>
             <h3 class="w-fit flex flex-row mb-1"><a class="text-gray text-[23px] text-medium mr-1 hover:text-lightGray" href="https://en.pronouns.page/@catboyash">he/him | they/them</a><Icon name="pronounspage" font-size="25" vertical-align="middle"/></h3>
             <ul>
                 <li class="float-left inline-block mr-2 transition transform hover:-translate-y-0.5"><a href="https://en.pronouns.page/terminology#transgender"><Image class="rounded-[0.2em]" src={trans} alt="trans flag" width="36" height="27"/></li></a>
@@ -25,4 +26,5 @@ import genderqueer from "../assets/genderqueer.png";
             </ul>
         </div>
     </div>
+    <hr class="clear-both bg-linkPink h-0.5 w-[calc(100%-100px)] border-0 rounded mx-auto">
 </header>

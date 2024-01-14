@@ -1,0 +1,11 @@
+---
+const { name, size, link } = Astro.props;
+---
+
+<li>
+    <h2 class="text-purple text-xl font-medium">{name}</h2>
+    <ul class="list-disc list-inside">
+        <li>Size: {size}</li>
+        <li>Official Link: <a href="{link}">{link}</a></li>
+    </ul>
+</li>
