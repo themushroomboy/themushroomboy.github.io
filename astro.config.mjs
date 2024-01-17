@@ -5,7 +5,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://themushroomboy.github.io',
+  site: 'https://catboyash.xyz',
   redirects: {
     '/pixel-painters-cheats': '/oddities/pixel-painters-cheats',
     '/cheatsdownload': 'https://www.youtube.com/watch?v=k3ebBTBeUTg&t=98s'
