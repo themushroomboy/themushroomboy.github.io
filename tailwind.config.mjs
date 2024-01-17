@@ -5,7 +5,8 @@ export default {
 		colors: {
 			'purple': 'rgb(211, 134, 255)',
 			'white': 'rgb(219, 220, 227)',
-			'sky': 'rgb(2 132 199)'
+			'sky': 'rgb(2 132 199)',
+			'red': 'rgb(255 0 0)'
 		},
 		borderRadius: {
 			DEFAULT: '10px',
@@ -42,6 +43,10 @@ export default {
 			},
 			animation: {
 				typing: 'typing 2s steps(20, end) forwards, blink .75s infinite'
+			},
+			backgroundImage: {
+				'space': "url('/src/assets/space.gif')",
+				'ppcheats': "url('/ppcheats/rainbowbg.jpg')",
 			},
 		},
 	plugins: [],

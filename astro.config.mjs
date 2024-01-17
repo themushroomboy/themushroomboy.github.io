@@ -7,7 +7,8 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: 'https://themushroomboy.github.io',
   redirects: {
-    '/pixel-painters-cheats': '/oddities/pixel-painters-cheats'
+    '/pixel-painters-cheats': '/oddities/pixel-painters-cheats',
+    '/cheatsdownload': 'https://www.youtube.com/watch?v=k3ebBTBeUTg&t=98s'
   },
   integrations: [sitemap(), icon(), tailwind()]
 });

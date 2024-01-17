@@ -1,0 +1,24 @@
+---
+import ListsLayout from '../../../layouts/ListsLayout.astro';
+
+const images = await Astro.glob("../../../../public/geese/*").then(files => {
+  return files.map(file => file.default);
+});
+---
+
+<ListsLayout title="catboyash - honk">
+	<body>
+			<h1 class="font-bold text-4xl mt-10">Pride Geese</h1>
+		<p class="mb-4 mt-2">
+			Pride geese emojis!! I will make more at some point but these are all I have right now. I did not make the original goose or know who made it, I only added the flags. <br/><span class="text-purple">Right Click -> Save Image As</span>
+		</p>
+		<ul class="grid grid-cols-4">
+			{
+				images.map(({src}) => (
+					<img src={src} loading="lazy"/>
+				))
+
+			}
+		</ul>
+	</body>
+</ListsLayout>

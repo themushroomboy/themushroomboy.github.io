@@ -11,7 +11,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html class="m-auto p-1 w-[800px]" lang="en">
+<html class="my-auto bg-space bg-cover grid place-items-center bg-no-repeat bg-center" lang="en">
 	<head transition:animate="none">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +25,7 @@ const { title } = Astro.props;
 		<ViewTransitions />
 		<title>{title}</title>
 	</head>
-	<body class="flex flex-col md:self-center text-lg gap-2">
+	<body class="flex flex-col md:self-center text-lg bg-main w-[900px] px-20 min-h-screen border-x-4 border-purple">
 		<Header />
 		<main transition:animate="slide">
 			<slot />
@@ -35,7 +35,7 @@ const { title } = Astro.props;
 </html>
 <style is:global>
 	html {
-		@apply text-white bg-main;
+		@apply text-white;
 		@apply text-lg;
 	}
 	a {

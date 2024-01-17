@@ -1,0 +1,32 @@
+---
+import ListsLayout from '../../../layouts/ListsLayout.astro';
+import DiscordList from '../../../components/lists/LinkList.astro';
+---
+
+<ListsLayout title="catboyash - discord upload limit list">
+	<body>
+			<h1 class="font-bold text-3xl mt-10">Strange Files That Can be Uploaded to Discord</h1>
+		<p class="mb-4 mt-2">
+			This is an assortment of completely random files that can be uploaded to Discord (no nitro). Files under 8MB are ★ starred.
+		</p>
+		<ul>
+			<DiscordList
+				name="★ OP Autoclicker 3",
+				size="0.84MB",
+				link="https://www.opautoclicker.com/"
+				
+			/>
+			<DiscordList
+				name="OreSpawn Mod",
+				size="17MB",
+				link="https://orespawn.fr/"
+			/>
+			<DiscordList
+				name="Geometry Dash's .exe",
+				size="8.48MB",
+				link="https://store.steampowered.com/app/322170/Geometry_Dash/"
+				
+			/>
+		</ul>
+	</body>
+</ListsLayout>
