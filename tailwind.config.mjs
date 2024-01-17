@@ -49,6 +49,10 @@ export default {
 				'ppcheats': "url('/ppcheats/rainbowbg.jpg')",
 			},
 		},
-	plugins: [],
-	}
+	},
+	plugins: [
+		require('tailwind-scrollbar-hide')
+		// ...
+	]
+	
 }
