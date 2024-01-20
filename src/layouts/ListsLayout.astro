@@ -10,7 +10,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html class="my-auto bg-space bg-cover grid place-items-center bg-no-repeat bg-center scrollbar-hide" lang="en">
+<html class="my-auto sm:bg-space sm:bg-cover grid place-items-center sm:bg-no-repeat sm:bg-center scrollbar-hide" lang="en">
 	<head transition:animate="none">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@ const { title } = Astro.props;
 		<ViewTransitions />
 		<title>{title}</title>
 	</head>
-	<body class="flex flex-col md:self-center text-lg bg-main w-[900px] px-20 min-h-screen border-x-4 border-purple">
+	<body class="flex flex-col md:self-center text-lg bg-main w-[900px] px-20 sm:min-h-screen sm:border-x-4 sm:border-purple">
         <header class="mt-5">
             <a class="text-white mr-1 hover:text-linkPink float-left" href="/oddities">Back</a>
         </header>
