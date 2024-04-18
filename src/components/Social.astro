@@ -1,0 +1,8 @@
+---
+import { Icon } from "astro-icon/components"
+const { icon, username, href } = Astro.props;
+---
+
+<li class="list-none w-fit flex flex-row pb-2.5">
+    <Icon name={icon} style="vertical-align: middle" font-size="45"/> <a class="pt-[0.25em] pb-[0.35em] px-[0.6em] ml-2.5 rounded font-medium bg-light text-white no-underline hover:bg-hover hover:text-lightWhite hover:no-underline" href={href}>{username}</a>
+</li>

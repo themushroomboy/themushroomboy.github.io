@@ -1,0 +1,10 @@
+---
+import { Image } from "astro:assets";
+const { image } = Astro.props;
+---
+
+<li class="flex bg-light hover:bg-hover rounded shadow-md bg-clip-border w-[225px] h-[225px] mx-auto px-2 py-2 mb-3 text-center">
+    <a class="hover:no-underline" target="_blank" href={image}>
+        <Image src={image} alt="pingy" width="400" height="400"/>
+    </a>
+</li>

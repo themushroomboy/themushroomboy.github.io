@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+---
+<header class="float-right mb-5">
+    <ul class="text-center sm:text-right mt-5">
+        <a class="text-white mr-1 hover:text-linkPink" href="/">Home</a>
+        <a class="text-white mr-1 hover:text-linkPink" href="/about">About</a>
+        <a class="text-white mr-1 hover:text-linkPink" href="/pingy">Pingy</a>
+        <a class="text-white mr-1 hover:text-linkPink" href="/oddities">Oddities</a>
+    </ul>
+    <div class="sm:float-left mb-7">
+        <Image class="sm:float-left mx-auto sm:mx-0" src="/pfp.png" alt="my pfp" width="120" height="120"/>
+        <div class="sm:float-right ml-5 text-center sm:text-left">
+            <h2 class="text-purple text-[40px] font-extrabold mt-2 mb-1">Ash</h2>
+            <h3 class="sm:w-fit sm:flex sm:flex-row mb-1"><a class="text-gray text-[23px] text-medium mr-1 hover:text-lightGray" href="https://en.pronouns.page/@catboyash">he/him | they/them</a><Icon class="hidden sm:inline" name="pronounspage" font-size="25" vertical-align="middle"/></h3>
+            <ul>
+                <li class="sm:float-left inline-block mr-2 transition transform hover:-translate-y-0.5"><a href="https://en.pronouns.page/terminology#transgender"><Image class="rounded-[0.2em]" src="/flags/trans.png" alt="trans flag" width="36" height="27"/></li></a>
+                <li class="sm:float-left inline-block mr-2 transition transform hover:-translate-y-0.5"><a href="https://en.pronouns.page/terminology#genderqueer"><Image class="rounded-[0.2em]" src="/flags/genderqueer.png" alt="genderqueer flag" width="36" height="27"/></li></a>
+                <li class="sm:float-left inline-block mr-2 transition transform hover:-translate-y-0.5"><a href="https://en.pronouns.page/terminology#panromantic"><Image class="rounded-[0.2em]" src= "/flags/pan.png" alt="pan flag" width="36" height="27"/></li></a>
+                <li class="sm:float-left inline-block mr-2 transition transform hover:-translate-y-0.5"><a href="https://en.pronouns.page/terminology#asexual"><Image class="rounded-[0.2em]" src="/flags/ace.png" alt="ace flag" width="36" height="27"/></li></a>
+            </ul>
+        </div>
+    </div>
+    <hr class="clear-both bg-linkPink h-0.5 w-[calc(100%-100px)] border-0 rounded mx-auto mt-5">
+</header>

@@ -1,0 +1,46 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html class="my-auto sm:bg-space sm:bg-cover grid place-items-center sm:bg-no-repeat sm:bg-center scrollbar-hide" lang="en">
+	<head transition:animate="none">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="icon" href="./favicon.ico" type="image/x-icon">
+		<ViewTransitions />
+		<title>{title}</title>
+	</head>
+	<body class="flex flex-col md:self-center text-lg bg-main sm:w-[900px] px-10 sm:px-20 sm:min-h-screen sm:border-x-4 sm:border-purple">
+        <header class="mt-5">
+            <a class="text-white mr-1 hover:text-linkPink float-left" href="/oddities">← Back</a>
+        </header>
+		<main transition:animate="slide">
+			<slot />
+			<Footer />
+		</main>
+	</body>
+</html>
+<style is:global>
+	html {
+		@apply text-white bg-main;
+		@apply text-lg;
+	}
+	a {
+        @apply text-linkPink no-underline;
+	}
+    a:hover {
+        @apply text-lightPink underline;
+    }
+</style>

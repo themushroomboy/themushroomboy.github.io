@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="catboyash - oddities">
+	<body>
+		<div class="flex w-max">
+			<h1 class="font-bold text-6xl overflow-hidden border-solid border-r-[0.15em] border-purple whitespace-nowrap w-0 animate-typing">Oddities</span></h1>
+		</div>
+		<p class="mb-8 mt-2">Random stuff that don't need a category of their own.</p>
+		<ul class="grid gap-2 grid-cols-1 sm:grid-cols-2">
+			<Card
+				href="/oddities/lists/pride-geese",
+				title="Pride Geese",
+				desc="Emojis of a goose holding pride flags, with a template included. Feel free to use!"
+			/>
+			<Card
+				href="/oddities/lists/useful-programs",
+				title="Useful Programs",
+				desc="An assortment of programs that I use and consider worth sharing."
+			/>
+			<Card
+				href="/pixel-painters-cheats",
+				title="Pixel Painters Cheats",
+				desc="Complicated inside joke from a game I had played 2 years ago, finally in stores near you!"
+			/>
+			<Card
+				href="/oddities/lists/hypixel-modpack",
+				title="Hypixel Modpack",
+				desc="My Forge modpack for Hypixel, because clients suck. Contains all notable 	&#34;client&#34; features."
+			/>
+		</ul>
+	</body>
+</Layout>

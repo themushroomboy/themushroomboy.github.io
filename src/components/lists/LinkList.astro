@@ -1,0 +1,12 @@
+---
+import Link from "../Link.astro";
+const { name, desc, link } = Astro.props;
+---
+
+<li class="mb-4">
+    <h2 class="text-purple text-xl font-semibold">{name}</h2>
+    <ul class="list-disc list-inside">
+        <li>{desc}</li>
+        <li>Official Link: <Link href={link}/></li>
+    </ul>
+</li>

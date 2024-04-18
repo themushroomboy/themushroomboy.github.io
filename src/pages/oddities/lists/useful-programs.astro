@@ -1,0 +1,54 @@
+---
+import ListsLayout from '../../../layouts/ListsLayout.astro';
+import LinkList from '../../../components/lists/LinkList.astro';
+---
+
+<ListsLayout title="catboyash - useful programs">
+	<body>
+			<h1 class="font-bold text-4xl mt-10">Useful Programs</h1>
+		<p class="mb-4 mt-2">
+			These are some useful apps that I use! Might help somebody.
+		</p>
+		<ul>
+			<LinkList
+				name="Borderless Gaming",
+				desc="Allows making open windows borderless.",
+				link="https://github.com/Codeusa/Borderless-Gaming"
+			/>
+			<LinkList
+				name="QTTabBar",
+				desc="Tabs for Windows 10 file explorer.",
+				link="https://github.com/indiff/qttabbar"
+			/>
+			<LinkList
+				name="PowerToys",
+				desc="Productivity features for windows, check out its own description.",
+				link="https://learn.microsoft.com/en-us/windows/powertoys/"
+			/>
+			<LinkList
+				name="OP Autoclicker 3",
+				desc="I think this is the best autoclicker out there.",
+				link="https://www.opautoclicker.com/"
+			/>
+			<LinkList
+				name="Syncthing",
+				desc="Peer to peer file synchronization.",
+				link="https://syncthing.net/"
+			/>
+			<LinkList
+				name="Vencord",
+				desc="It's true, this is the cutest Discord client of All Time.",
+				link="https://vencord.dev/"
+			/>
+			<LinkList
+				name="paint.net",
+				desc="Lightweight image editor.",
+				link="https://getpaint.net/"
+			/>
+			<LinkList
+				name="GreenLuma",
+				desc="Steam family share bypass. The link is to a manager.",
+				link="https://github.com/BlueAmulet/GreenLuma-2024-Manager"
+		</ul>
+	</body>
+</ListsLayout>

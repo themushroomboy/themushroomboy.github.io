@@ -1,0 +1,10 @@
+---
+const { title, desc, href } = Astro.props;
+---
+
+<li class="flex bg-light hover:bg-hover rounded shadow-md bg-clip-border w-[calc(100%-10px)] mx-auto pl-4 pb-4 pr-4 mb-2 text-center">
+    <a class="hover:no-underline" href={href}>
+        <h2 class="text-purple text-2xl font-semibold mt-3">{title}</h2>
+        <p>{desc}</p>
+    </a>
+</li>
